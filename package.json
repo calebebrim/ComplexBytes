@@ -1,8 +1,8 @@
 {
   "name": "@calebebrim/complexbytes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "ComplexBytes.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,13 +11,8 @@
     "url": "https://github.com/calebebrim/ComplexBytes.git"
   },
   "author": "calebebrim",
-  "license": "ISC",
+  "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   }
 }
-// npm config set registry https://registry.npmjs.org/
-// npm config set registry https://npm.pkg.github.com/
-
-// npm config set @github:registry https://npm.pkg.github.com/
-// npm config set @npm:registry https://registry.npmjs.org/
