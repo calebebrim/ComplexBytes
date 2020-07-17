@@ -24,8 +24,8 @@
  * 1024**7	ZiB	zebibyte	–
  * 1024**8	YiB	yobibyte
  */
- 
-export class ComplexBytes {
+
+export default class ComplexBytes {
   /** @param {Number} bytes*/
   constructor(bytes) {
     this.bytes = bytes

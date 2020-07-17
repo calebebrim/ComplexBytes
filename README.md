@@ -3,8 +3,6 @@ This is an util class to convert bytes to other scales.
 
 Looking over the internet, you will find 2 patters: Decimal and Bynary format. This class consider two cases with utilitary methods.  
 
-
-
   
  
 ## Decimal Reference for byte ammount
@@ -49,3 +47,4 @@ Looking over the internet, you will find 2 patters: Decimal and Bynary format. T
  console.log(ComplexBytes.GB(1).bytes) // => 1000000000
 
  ```
+# Install
