@@ -39,27 +39,27 @@ export class ComplexBytes {
     if (value % 1 != 0) throw new Error("bytes does not accept decimal values")
     this.total_bytes = value
   }
-  
+
   /** @returns {Number}*/ get bytes() { return this.total_bytes }
   /** @returns {Number}*/ get B() { return this.total_bytes }
-  /** @returns {Number}*/ get KiB() { return Math.max(this.total_bytes / 1024 ** 1, 0.1) }
-  /** @returns {Number}*/ get MiB() { return Math.max(this.total_bytes / 1024 ** 2, 0.1) }
-  /** @returns {Number}*/ get GiB() { return Math.max(this.total_bytes / 1024 ** 3, 0.1) }
-  /** @returns {Number}*/ get TiB() { return Math.max(this.total_bytes / 1024 ** 4, 0.1) }
-  /** @returns {Number}*/ get PiB() { return Math.max(this.total_bytes / 1024 ** 5, 0.1) }
-  /** @returns {Number}*/ get EiB() { return Math.max(this.total_bytes / 1024 ** 6, 0.1) }
-  /** @returns {Number}*/ get ZiB() { return Math.max(this.total_bytes / 1024 ** 7, 0.1) }
-  /** @returns {Number}*/ get YiB() { return Math.max(this.total_bytes / 1024 ** 8, 0.1) }
+  /** @returns {Number}*/ get KiB() { return this.total_bytes / 1024 ** 1 }
+  /** @returns {Number}*/ get MiB() { return this.total_bytes / 1024 ** 2 }
+  /** @returns {Number}*/ get GiB() { return this.total_bytes / 1024 ** 3 }
+  /** @returns {Number}*/ get TiB() { return this.total_bytes / 1024 ** 4 }
+  /** @returns {Number}*/ get PiB() { return this.total_bytes / 1024 ** 5 }
+  /** @returns {Number}*/ get EiB() { return this.total_bytes / 1024 ** 6 }
+  /** @returns {Number}*/ get ZiB() { return this.total_bytes / 1024 ** 7 }
+  /** @returns {Number}*/ get YiB() { return this.total_bytes / 1024 ** 8 }
 
 
-  /** @returns {Number}*/ get KB() { return Math.max(this.total_bytes / 1000 ** 1, 0.1) }
-  /** @returns {Number}*/ get MB() { return Math.max(this.total_bytes / 1000 ** 2, 0.1) }
-  /** @returns {Number}*/ get GB() { return Math.max(this.total_bytes / 1000 ** 3, 0.1) }
-  /** @returns {Number}*/ get TB() { return Math.max(this.total_bytes / 1000 ** 4, 0.1) }
-  /** @returns {Number}*/ get PB() { return Math.max(this.total_bytes / 1000 ** 5, 0.1) }
-  /** @returns {Number}*/ get EB() { return Math.max(this.total_bytes / 1000 ** 6, 0.1) }
-  /** @returns {Number}*/ get ZB() { return Math.max(this.total_bytes / 1000 ** 7, 0.1) }
-  /** @returns {Number}*/ get YB() { return Math.max(this.total_bytes / 1000 ** 8, 0.1) }
+  /** @returns {Number}*/ get kB() { return this.total_bytes / 1000 ** 1 }
+  /** @returns {Number}*/ get MB() { return this.total_bytes / 1000 ** 2 }
+  /** @returns {Number}*/ get GB() { return this.total_bytes / 1000 ** 3 }
+  /** @returns {Number}*/ get TB() { return this.total_bytes / 1000 ** 4 }
+  /** @returns {Number}*/ get PB() { return this.total_bytes / 1000 ** 5 }
+  /** @returns {Number}*/ get EB() { return this.total_bytes / 1000 ** 6 }
+  /** @returns {Number}*/ get ZB() { return this.total_bytes / 1000 ** 7 }
+  /** @returns {Number}*/ get YB() { return this.total_bytes / 1000 ** 8 }
 
   static KiB(ammount) { return new ComplexBytes(ammount * 1024 ** 1) }
   static MiB(ammount) { return new ComplexBytes(ammount * 1024 ** 2) }
