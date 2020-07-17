@@ -48,3 +48,9 @@ Looking over the internet, you will find 2 patters: Decimal and Bynary format. T
 
  ```
 # Install
+
+To install this package use following command.
+
+```
+npm install calebebrim/complexbytes
+```
